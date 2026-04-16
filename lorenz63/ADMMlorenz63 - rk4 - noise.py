@@ -358,7 +358,7 @@ fig = plt.figure(2, dpi=60, figsize=(15, 15))
 ax = fig.add_subplot(111, projection='3d')
 
 ax.scatter(xs[::M,0], xs[::M,1], xs[::M,2], label='Obs', c='magenta', marker='o', s=100, alpha=0.7)
-ax.plot(xst[:,0], xst[:,1], xst[:,2], label='Ture', color='#1f77b4', linewidth=2)
+ax.plot(xst[:,0], xst[:,1], xst[:,2], label='True', color='#1f77b4', linewidth=2)
 
 ax.plot(x_admm[:,0], x_admm[:,1], x_admm[:,2], label='ADMM', color='#ff7f0e', linestyle='-.', linewidth=2)
 #ax.plot(x_bfgs[:,0], x_bfgs[:,1], x_bfgs[:,2], label='L-BFGS-B', color='#d62728', linewidth=2)
